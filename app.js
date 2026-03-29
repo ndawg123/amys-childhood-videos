@@ -66,10 +66,15 @@ function render(items) {
 }
 
 async function load() {
+  const folderLink = document.getElementById("folder-link");
   try {
     const res = await fetch("./videos.json", { cache: "no-store" });
     if (!res.ok) throw new Error(String(res.status));
     const data = await res.json();
+    const folderUrl = typeof data.driveFolderUrl === "string" ? data.driveFolderUrl.trim() : "";
+    if (folderUrl && folderLink) {
+      folderLink.href = folderUrl;
+    }
     const items = Array.isArray(data.items) ? data.items : [];
     render(items);
   } catch {

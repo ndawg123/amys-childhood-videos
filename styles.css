@@ -87,6 +87,37 @@ h1 {
   color: var(--ink);
 }
 
+.folder-cta {
+  margin: 1.75rem 0 0;
+}
+
+.btn-folder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--card);
+  background: var(--accent);
+  border: none;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(139, 90, 60, 0.28);
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.btn-folder:hover {
+  background: #7a4e34;
+  transform: translateY(-1px);
+}
+
+.btn-folder:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 main {
   position: relative;
   z-index: 1;
