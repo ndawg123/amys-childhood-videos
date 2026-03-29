@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amy's Childhood Videos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="hero">
+      <p class="eyebrow">Family archive</p>
+      <h1>Amy's Childhood Videos</h1>
+      <p class="lede">
+        A quiet place to watch and share home videos. Add Google Drive file IDs to
+        <code>videos.json</code> to populate this page.
+      </p>
+    </header>
+
+    <main>
+      <section id="gallery" class="gallery" aria-live="polite"></section>
+      <section id="empty" class="empty-state hidden" hidden>
+        <p>No videos listed yet.</p>
+        <p class="hint">
+          Open <code>videos.json</code>, add entries with a Drive <code>fileId</code> (from the file URL),
+          then push to GitHub. Each video card uses Drive's preview embed.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Prototype — <a href="https://github.com/ndawg123/amys-childhood-videos">source on GitHub</a></p>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
