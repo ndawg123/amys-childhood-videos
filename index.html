@@ -18,18 +18,28 @@
       <p class="eyebrow">Family archive</p>
       <h1>Amy's Childhood Videos</h1>
       <p class="lede">
-        A quiet place to watch and share home videos. Add Google Drive file IDs to
-        <code>videos.json</code> to populate this page.
+        Home videos live in a shared Google Drive folder. Open the folder to browse and play
+        everything, or scroll down for embedded clips if any are listed below.
+      </p>
+      <p class="folder-cta">
+        <a
+          id="folder-link"
+          class="btn-folder"
+          href="https://drive.google.com/drive/folders/1gzCUP59-Rn3V125z5rRZ4g4tpE2kdyll"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open folder in Google Drive</a
+        >
       </p>
     </header>
 
     <main>
       <section id="gallery" class="gallery" aria-live="polite"></section>
       <section id="empty" class="empty-state hidden" hidden>
-        <p>No videos listed yet.</p>
+        <p>No embedded clips on this page yet.</p>
         <p class="hint">
-          Open <code>videos.json</code>, add entries with a Drive <code>fileId</code> (from the file URL),
-          then push to GitHub. Each video card uses Drive's preview embed.
+          Use <strong>Open folder in Google Drive</strong> above to watch all videos in the folder.
+          To show specific videos here, add <code>fileId</code> entries to <code>videos.json</code>.
         </p>
       </section>
     </main>
