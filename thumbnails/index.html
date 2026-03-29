@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amy's Childhood Videos — Thumbnails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="hero">
+      <p class="eyebrow">Family archive</p>
+      <h1>Amy's Childhood Videos</h1>
+      <p class="lede">
+        Thumbnail grid — click a tile to open the video in Google Drive. Uses the same
+        <code>videos.json</code> as the <a href="../">embedded layout</a>.
+      </p>
+      <p class="folder-cta">
+        <a
+          id="folder-link"
+          class="btn-folder"
+          href="https://drive.google.com/drive/folders/1gzCUP59-Rn3V125z5rRZ4g4tpE2kdyll"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open folder in Google Drive</a
+        >
+      </p>
+    </header>
+
+    <main>
+      <section id="gallery" class="thumb-gallery" aria-live="polite"></section>
+      <section id="empty" class="empty-state hidden" hidden>
+        <p>No videos with thumbnails yet.</p>
+        <p class="hint">
+          Add entries with <code>fileId</code> to <code>videos.json</code> in the repo root (one list
+          drives both pages). Thumbnails come from Google Drive's preview image for each file.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        <a href="../">Embedded players layout</a>
+        ·
+        <a href="https://github.com/ndawg123/amys-childhood-videos">GitHub</a>
+      </p>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
